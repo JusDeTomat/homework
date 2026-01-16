@@ -8,9 +8,9 @@ def check_plant_health(plant_name, water_level, sunlight_hours):
         if (water_level < 1):
             raise ValueError(f"Water level {water_level} is too low (min 1)")
         if (sunlight_hours > 12):
-            raise ValueError(f"Sunlight hours  {sunlight_hours} is too high (max 10)")
+            raise ValueError(f"Sunlight hours  {sunlight_hours} is too high (max 12)")
         if (sunlight_hours < 2):
-            raise ValueError(f"Sunlight hours  {sunlight_hours} is too low (min 1)")
+            raise ValueError(f"Sunlight hours  {sunlight_hours} is too low (min 2)")
         print("Plant 'tomato' is healthy!")
     except ValueError as e:
         print(f"Error: {e}")
